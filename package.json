@@ -1,0 +1,23 @@
+{
+  "name": "food-waste-redistribution",
+  "version": "1.0.0",
+  "description": "Food Waste Redistribution System connecting surplus food donors with NGOs using Firebase and Cloud Firestore",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js",
+    "deploy": "firebase deploy",
+    "deploy:rules": "firebase deploy --only firestore:rules,storage",
+    "deploy:hosting": "firebase deploy --only hosting"
+  },
+  "keywords": [
+    "food-waste",
+    "redistribution",
+    "firebase",
+    "firestore",
+    "charity",
+    "ngo"
+  ],
+  "author": "Food Waste Redistribution Project",
+  "license": "MIT"
+}

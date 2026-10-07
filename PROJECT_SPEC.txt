@@ -1,0 +1,90 @@
+FOOD WASTE REDISTRIBUTION SYSTEM
+PROJECT SPECIFICATION
+
+PROJECT DIRECTORY
+food-waste-redistribution/
+
+FILE LOCATION
+food-waste-redistribution/PROJECT_SPEC.txt
+
+1. PROJECT OVERVIEW
+Build a functional web application that connects food donors with NGOs so surplus food can be redistributed instead of wasted.
+
+2. USER ROLES
+- Donor
+- NGO
+- Admin
+
+3. TECHNOLOGY STACK
+Frontend:
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+
+Firebase:
+- Firebase Authentication
+- Cloud Firestore
+- Firebase Storage
+- Firebase Hosting
+
+4. AUTHENTICATION
+Use Firebase Authentication with Email/Password.
+Public registration should allow only donor and NGO.
+
+5. ADMIN MODULE
+The Admin must be able to:
+- View all registered users
+- Approve or reject NGOs
+- View active donations
+- Monitor system metrics
+- Remove invalid records
+
+6. DONOR MODULE
+The donor must be able to:
+- Create a food donation
+- View their donations
+- Edit or cancel a donation
+- See donation status
+
+7. NGO MODULE
+The NGO must be able to:
+- View available food donations
+- Search and filter listings
+- Claim or accept available food
+- View accepted donations
+
+8. REAL-TIME REQUIREMENT
+Use Firestore real-time listeners and update automatically without page refresh.
+
+9. FIRESTORE DATABASE
+- users/{uid}
+- donations/{donationId}
+- requests/{requestId}
+
+10. FOOD IMAGE UPLOAD
+Use Firebase Storage for food images.
+
+11. LOCATION
+Allow donors to enter pickup location and optional GPS coordinates.
+
+12. USER INTERFACE
+Create a clean responsive UI using Bootstrap.
+
+13. DEVELOPMENT ORDER
+1. Project structure
+2. Firebase connection
+3. Authentication
+4. User roles
+5. Firestore users collection
+6. Donor dashboard
+7. Donation creation
+8. NGO dashboard
+9. Real-time updates
+10. Donation acceptance
+11. Firebase Storage upload
+12. Security rules
+13. Hosting deployment
+
+14. FINAL GOAL
+A donor can create a food donation and an NGO can claim it without refreshing the page.
